@@ -158,7 +158,7 @@ Javac 编译可以对字符串常量直接相加的表达式进行优化，不�
 
 \6. 在getter方法中，不要直接返回对象本身，而是克隆对象，并返回对象的拷贝
 
-<http://www.cnblogs.com/yg_zhang/p/4355354.html> <http://www.importnew.com/7535.html>
+
 
 ### **为什么String要设计成不可变的\****
 
@@ -188,7 +188,7 @@ Javac 编译可以对字符串常量直接相加的表达式进行优化，不�
 
 \8. 
 
-<http://blog.csdn.net/renfufei/article/details/16808775> <http://www.codeceo.com/article/why-java-string-immutable.html> <http://www.importnew.com/7440.html> <http://www.importnew.com/16817.html>
+
 
 ### **什么是 Java 序列化，如何实现 Java 序列化**
 
@@ -348,7 +348,7 @@ String S1 = “This is only a” + “ simple” + “ test”;
 
 StringBuffer Sb = new StringBuilder(“This is only a”).append(“simple”).append(“ test”);
 
-参见：<http://www.findspace.name/easycoding/1090>
+
 
 ### **try catch finally，try里有return，finally还执行么？**
 
@@ -378,7 +378,7 @@ Integer 和 String 一样。保存value的类变量是Final属性，无法被修
 
 ### **Integer**
 
-<http://www.cnblogs.com/dolphin0520/p/3780005.html>
+
 
 ### **修饰符顺序**
 
@@ -766,7 +766,7 @@ Java中hashmap的解决办法就是采用的链地址法。
 
 HashMap实现原理：
 
-· <http://blog.csdn.net/vking_wang/article/details/14166593>
+·
 
 · [美团点评][Java 8系列之重新认识HashMap](https://tech.meituan.com/java-hashmap.html) | 写的比较好
 
@@ -1298,7 +1298,7 @@ ShutdownNow首先将线程池的状态设置成STOP, 然后尝试停止所有正
 
 ThreadLocal并不是一个Thread，而是Thread的局部变量, 当使用ThreadLocal维护变量时，ThreadLocal为每个使用该变量的线程提供独立的变量副本，所以每一个线程都可以独立地改变自己的副本，而不会影响其它线程所对应的副本
 
-<http://blog.csdn.net/lufeng20/article/details/24314381>
+
 
 ### **同步**
 
@@ -1336,7 +1336,7 @@ wait() 是 **Object 类的方法**，对此对象调用 wait()方法导致本线
 
 线程池顾名思义就是事先创建若干个可执行的线程放入一个池（容器）中，需要的时候从池中获取线程不用自行创建，使用完毕不需要销毁线程而是放回池中，从而减少创建和销毁线程对象的开销。
 
-<http://www.cnblogs.com/dolphin0520/p/3932921.html>
+
 
 ### **ConcurrentHashMap实现原理**
 
@@ -1826,7 +1826,7 @@ obj 保存在java栈中的局部变量表里，作为一个引用数据出现。
 
 **如果一个外部类的实例对象的方法返回了一个内部类的实例对象**，这个内部类对象被长期引用了，即使那个外部类实例对象不再被使用，但由于内部类持久外部类的实例对象，这个外部类对象将不会被垃圾回收，这也会造成内存泄露。
 
-<http://www.mamicode.com/info-detail-504269.html>
+
 
 ### **什么时候会发生jvm堆（持久区）内存溢出**
 
@@ -2114,7 +2114,7 @@ JVM 中类的装载是由类加载器（ClassLoader） 和它的子类来实现�
 
 ### **Jvm 自动内存管理（什么时候触发 gc ）**
 
-<http://jeromecen1021.blog.163.com/blog/static/18851527120117274624888/> FULL GC 和 Minor GC 的触发时间 程序员不能具体控制时间，系统在不可预测的时间调用System.gc()函数的时候；当然可以通过调优，用NewRatio控制newObject和oldObject的比例，用MaxTenuringThreshold 控制进入oldObject的次数，使得oldObject 存储空间延迟达到full gc,从而使得计时器引发gc时间延迟OOM的时间延迟，以延长对象生存期。
+FULL GC 和 Minor GC 的触发时间 程序员不能具体控制时间，系统在不可预测的时间调用System.gc()函数的时候；当然可以通过调优，用NewRatio控制newObject和oldObject的比例，用MaxTenuringThreshold 控制进入oldObject的次数，使得oldObject 存储空间延迟达到full gc,从而使得计时器引发gc时间延迟OOM的时间延迟，以延长对象生存期。
 
 ### **GC停顿原因，如何降低停顿**
 
@@ -2136,7 +2136,7 @@ JVM都有两种机制，一个是装载具有合适名称的类(类或是接口)
 
 · 本地方法调用的状态被存储在本地方法栈，该方法栈依赖于具体的实现。
 
-<http://blog.csdn.net/dongdong_java/article/details/24797307> <http://blog.csdn.net/longyulu/article/details/8350622>
+
 
 ### **如果想不被 GC 怎么办**
 
